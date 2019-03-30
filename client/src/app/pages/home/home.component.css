@@ -1,0 +1,33 @@
+h5 {
+  color: white;
+  margin-left: 500px;
+}
+
+header {
+  padding-top: 15rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("/assets/images/header.jpg");
+  background-position: center center;
+  background-size: cover cover;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
