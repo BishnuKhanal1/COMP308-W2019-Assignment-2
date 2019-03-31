@@ -1,16 +1,22 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+/*
+Name            : Bishnu Khanal
+Student Number  : 300924228
+Designation     : Assignment 2 Mean Portfolio site
+Site / Page     : page - not - found.component.spec.ts
+*/
 
-import { PageNotFoundComponent } from './page-not-found.component';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-describe('PageNotFoundComponent', () => {
+import { PageNotFoundComponent } from "./page-not-found.component";
+
+describe("PageNotFoundComponent", () => {
   let component: PageNotFoundComponent;
   let fixture: ComponentFixture<PageNotFoundComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageNotFoundComponent ]
-    })
-    .compileComponents();
+      declarations: [PageNotFoundComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +25,7 @@ describe('PageNotFoundComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

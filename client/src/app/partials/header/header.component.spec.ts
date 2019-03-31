@@ -1,16 +1,22 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+/*
+Name            : Bishnu Khanal
+Student Number  : 300924228
+Designation     : Assignment 2 Mean Portfolio site
+Site / Page     : header.component.spec.ts
+*/
 
-import { HeaderComponent } from './header.component';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-describe('HeaderComponent', () => {
+import { HeaderComponent } from "./header.component";
+
+describe("HeaderComponent", () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
-    })
-    .compileComponents();
+      declarations: [HeaderComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +25,7 @@ describe('HeaderComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

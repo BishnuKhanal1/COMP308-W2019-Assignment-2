@@ -1,3 +1,10 @@
+/*
+Name            : Bishnu Khanal
+Student Number  : 300924228
+Designation     : Assignment 2 Mean Portfolio site
+Site / Page     : app-routing-modules.ts
+*/
+
 // Modules
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";

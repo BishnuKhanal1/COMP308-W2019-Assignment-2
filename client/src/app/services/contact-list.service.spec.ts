@@ -1,11 +1,18 @@
-import { TestBed } from '@angular/core/testing';
+/*
+Name            : Bishnu Khanal
+Student Number  : 300924228
+Designation     : Assignment 2 Mean Portfolio site
+Site / Page     : contact-list.service.spec.ts
+*/
 
-import { ContactListService } from './contact-list.service';
+import { TestBed } from "@angular/core/testing";
 
-describe('ContactListService', () => {
+import { ContactListService } from "./contact-list.service";
+
+describe("ContactListService", () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
-  it('should be created', () => {
+  it("should be created", () => {
     const service: ContactListService = TestBed.get(ContactListService);
     expect(service).toBeTruthy();
   });

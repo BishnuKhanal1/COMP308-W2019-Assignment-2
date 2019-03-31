@@ -1,3 +1,10 @@
+/*
+Name             : Bishnu Khanal
+Student Number   : 300924228
+Designation      : Assignment 2 Mean Portfolio site
+Site / Page      : login.component.ts
+*/
+
 import { Component, OnInit } from "@angular/core";
 import { FlashMessagesService } from "angular2-flash-messages";
 import { AuthService } from "src/app/services/auth.service";

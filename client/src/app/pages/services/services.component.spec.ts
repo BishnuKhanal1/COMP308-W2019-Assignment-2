@@ -1,16 +1,22 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+/*
+Name             : Bishnu Khanal
+Student Number   : 300924228
+Designation      : Assignment 2 Mean Portfolio site
+Site / Page      : services.component.spec.ts
+*/
 
-import { ServicesComponent } from './services.component';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-describe('ServicesComponent', () => {
+import { ServicesComponent } from "./services.component";
+
+describe("ServicesComponent", () => {
   let component: ServicesComponent;
   let fixture: ComponentFixture<ServicesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ServicesComponent ]
-    })
-    .compileComponents();
+      declarations: [ServicesComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +25,7 @@ describe('ServicesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

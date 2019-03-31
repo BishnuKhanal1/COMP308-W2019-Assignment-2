@@ -1,16 +1,22 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+/*
+Name            : Bishnu Khanal
+Student Number  : 300924228
+Designation     : Assignment 2 Mean Portfolio site
+Site / Page     : contact.list.component.spec.ts
+*/
 
-import { ContactListComponent } from './contact-list.component';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-describe('ContactListComponent', () => {
+import { ContactListComponent } from "./contact-list.component";
+
+describe("ContactListComponent", () => {
   let component: ContactListComponent;
   let fixture: ComponentFixture<ContactListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactListComponent ]
-    })
-    .compileComponents();
+      declarations: [ContactListComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +25,7 @@ describe('ContactListComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
