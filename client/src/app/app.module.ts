@@ -33,6 +33,7 @@ import {
   JwtHelperService,
   JwtInterceptor
 } from "@auth0/angular-jwt";
+import { AuthGuard } from "./guards/auth.guard";
 
 export function jwtTokenGetter() {
   return localStorage.getItem("id_token");
@@ -68,7 +69,7 @@ export function jwtTokenGetter() {
       }
     })
   ],
-  providers: [FlashMessagesService],
+  providers: [FlashMessagesService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -17,6 +17,7 @@ import { User } from "../models/user";
 })
 export class ContactListService {
   private user: User;
+  private authToken: any = null;
 
   private endpoint = "http://localhost:3000/api/contact-list/";
 
@@ -29,9 +30,12 @@ export class ContactListService {
     })
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.user = new User();
+  }
 
   public getList(): Observable<any> {
+    this.loadToken();
     return this.http.get<any>(this.endpoint, this.httpOptions);
   }
 
@@ -62,6 +66,14 @@ export class ContactListService {
     return this.http.get<any>(
       this.endpoint + "delete/" + contact._id,
       this.httpOptions
+    );
+  }
+  private loadToken() {
+    const token = localStorage.getItem("id_token");
+    this.authToken = token;
+    this.httpOptions.headers = this.httpOptions.headers.set(
+      "Authorization",
+      this.authToken
     );
   }
 }
