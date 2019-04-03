@@ -17,9 +17,9 @@ import { User } from "../models/user";
 export class AuthService {
   user: User;
   private authToken: any;
-  // private endpoint =
-  //  "https://dashboard.heroku.com/apps/comp308-w2019-assignment-02/api";
-  private endpoint = "http://localhost:3000/api/";
+  private endpoint =
+    "https://dashboard.heroku.com/apps/comp308-w2019-assignment-02/api";
+  //private endpoint = "http://localhost:3000/api/";
 
   private httpOptions = {
     headers: new HttpHeaders({
