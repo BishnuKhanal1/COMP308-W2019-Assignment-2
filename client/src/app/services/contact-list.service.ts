@@ -20,7 +20,7 @@ export class ContactListService {
   private authToken: any = null;
 
   private endpoint =
-    "https://comp308-w2019-assignment-02.herokuapp.com/home/api/";
+    "https://comp308-w2019-assignment-02.herokuapp.com/api/contact-list/";
   //private endpoint = "http://localhost:3000/api/contact-list/";
 
   private httpOptions = {
